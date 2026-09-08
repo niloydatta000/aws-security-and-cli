@@ -96,7 +96,7 @@ fields @timestamp, remoteIP, request, status, filename
 
 Example EC2 metric query:
 
-```text
+```
 SEARCH('{AWS/EC2,InstanceId} MetricName="CPUUtilization"', 'Average')
 ```
 
@@ -159,11 +159,11 @@ unzip awscliv2.zip
 chmod a+x ./aws/install
 sudo ./aws/install
 ```
-> **N.B: If You do not have `sudo` access, folllow `InstallationScripts/Linux_AMD64/README.md`
+> **N.B:** If You do not have `sudo` access, folllow [/InstallationScripts/Linux_AMD64/README.md](./InstallationScripts/Linux_AMD64/README.md)
 
 ### Windows
 
-The included `InstallationScripts/Windows.setup.ps1` script uses PowerShell and `msiexec.exe` to download and install the AWS CLI v2 MSI package.
+The included `/InstallationScripts/Windows.setup.ps1` script uses PowerShell and `msiexec.exe` to download and install the AWS CLI v2 MSI package.
 
 Run PowerShell **as Administrator**, then execute:
 
